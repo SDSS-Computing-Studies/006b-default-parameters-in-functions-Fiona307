@@ -37,14 +37,9 @@ def cosineLaw(x,y,angle,oppositeSide = True):
     if oppositeSide == False:
         #if y = the oppositeSide
         a = 1
-        b = 2*float(x)*math.cos(convertAngle(angle))
-        c = float(x)**2 - float(y)**2
+        b = 2*float(y)*math.cos(convertAngle(angle))
+        c = float(y)**2 - float(x)**2
         z = solution(quadratic(a,b,c))
-        if z <= 0:
-            m = 1
-            n = 2*float(y)*math.cos(angle)
-            p = float(y)**2 - float(x)**2
-            z = solution(quadratic(m,n,p))
     return z
 
 
