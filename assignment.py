@@ -35,7 +35,7 @@ def solution(List):
 def cosineLaw(x,y,angle,oppositeSide = True):
     z = math.sqrt(float(x)**2 + float(y)**2 - 2*float(x)*float(y)*math.cos(convertAngle(angle)))
     if oppositeSide == False:
-        #if y = the oppositeSide
+        #if x = the oppositeSide
         a = 1
         b = 2*float(y)*math.cos(convertAngle(angle))
         c = float(y)**2 - float(x)**2
