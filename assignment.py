@@ -8,15 +8,18 @@ def tempConversion(degree, unit = "C"):
         answer = round((float(degree) - 32)*5/9,1)
     return answer
 
-def factorPair():
+def factorPair(num,a):
+    b = num/a
+    answer = [a,b]
+    answer.sort()
+    return answer
 
 
+#def cosineLaw():
 
-def cosineLaw():
+#def convertAngle():
 
-def convertAngle():
+#def solution():
 
-def solution():
-
-def quadratic():
+#def quadratic():
 
