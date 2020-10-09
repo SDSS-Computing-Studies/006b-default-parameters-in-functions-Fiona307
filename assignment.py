@@ -9,7 +9,7 @@ def tempConversion(degree, unit = "C"):
     return answer
 
 def factorPair(num,a):
-    b = num/a
+    b = int(num/a)
     answer = [a,b]
     answer.sort()
     return answer
