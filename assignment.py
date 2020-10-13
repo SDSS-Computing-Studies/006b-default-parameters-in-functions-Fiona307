@@ -19,8 +19,8 @@ def convertAngle(degree):
     return angle
 
 def quadratic(a,b,c):
-    x1 = round((-float(b) + math.sqrt(float(b)**2 - 4*float(a)*float(c)))/(2*float(a)),1)
-    x2 = round((-float(b) - math.sqrt(float(b)**2 - 4*float(a)*float(c)))/(2*float(a)),1)
+    x1 = round((-float(b) + math.sqrt(float(b)**2 - 4*float(a)*float(c)))/(2*float(a)),2)
+    x2 = round((-float(b) - math.sqrt(float(b)**2 - 4*float(a)*float(c)))/(2*float(a)),2)
     solution = [x1,x2]
     solution.sort()
     return solution
@@ -33,7 +33,7 @@ def solution(List):
     return answer
 
 def cosineLaw(x,y,angle,oppositeSide = True):
-    z = round(math.sqrt(float(x)**2 + float(y)**2 - 2*float(x)*float(y)*math.cos(convertAngle(angle))),1)
+    z = round(math.sqrt(float(x)**2 + float(y)**2 - 2*float(x)*float(y)*math.cos(convertAngle(angle))),2)
     if oppositeSide == False:
         # c^2 = a^2 + b^2 - 2abcosC
         # a^2 - 2abcosC + b^2 - c^2
