@@ -15,7 +15,7 @@ def factorPair(num,a):
     return answer
 
 def convertAngle(degree):
-    angle = math.pi*float(degree)/180
+    angle = round(math.pi*float(degree)/180,4)
     return angle
 
 def quadratic(a,b,c):
