@@ -3,7 +3,7 @@
 import assignment
 
 def test1():
-  x = assignment.toRadians(30)
+  x = assignment.convertAngle(30)
   assert round(x,4) == 0.5236
 
 def test2():
