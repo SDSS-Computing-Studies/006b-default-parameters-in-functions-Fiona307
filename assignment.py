@@ -33,7 +33,7 @@ def solution(List):
     return answer
 
 def cosineLaw(x,y,angle,oppositeSide = True):
-    z = round(math.sqrt(float(x)**2 + float(y)**2 - 2*float(x)*float(y)*math.cos(convertAngle(float(angle)))),2)
+    z = round(math.sqrt(float(x)**2 + float(y)**2 - 2*float(x)*float(y)*math.cos(convertAngle(angle))),2)
     if oppositeSide == False:
         # c^2 = a^2 + b^2 - 2abcosC
         # a^2 - 2abcosC + b^2 - c^2
